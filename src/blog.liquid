@@ -1,0 +1,9 @@
+---
+title: Pets
+---
+
+<ul>
+{% for p in collections.catsAndDogs -%}
+  <li><a href="{{ p.url }}">{{ p.data.title }}</a> -- {{ p.data.tags | json }}</li>
+{% endfor -%}
+</ul>
